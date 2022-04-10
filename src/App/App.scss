@@ -1,0 +1,20 @@
+@import '../../public/style.scss';
+
+#root{
+    background-image: url('../../public/images/image-hero-mobile.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    @media (min-width: $desktop_width) {
+        background-image: url('../../public/images/image-hero-desktop.jpg');
+        background-size: contain
+    }
+}
+
+.nav-container {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: 3em;
+    padding-top: 3em
+}

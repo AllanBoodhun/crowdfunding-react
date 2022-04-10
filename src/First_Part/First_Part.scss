@@ -1,0 +1,60 @@
+
+@import "../../public/style.scss";
+
+.First-container {
+
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 30%;
+    // height: 300px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+
+    @media (min-width: $desktop_width) {
+
+    }
+
+.logo-craft{
+
+    position: absolute;
+    top: -23px;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    @media (min-width: $desktop_width) {
+
+        position: absolute;
+        top: -23px;
+
+    }
+
+}
+
+.BigTitle {
+
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 2.5em;
+
+}
+
+.SimpText {
+
+    color : rgb(129, 129, 129);
+    font-size: 1.1em;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.Button-container{
+
+    display: flex;
+    
+}
+
+}
