@@ -2,24 +2,13 @@
 @import "../../public/style.scss";
 
 
-.card{
-    background-color: #fff;
-    max-width: $innerSmallWidth;
-    width: 100%;
-    margin: 25px auto;
-    padding: 40px;
-    border-radius: 10px;
-    border: 1px solid rgb(228, 228, 228);
-}
-
-
 #First-container {
 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     position: relative;
-
+    margin-top: 30%;
     // @media (min-width: $desktop_width) {
 
     // }
@@ -45,22 +34,105 @@
 
     font-size: 1.5em;
     text-align: center;
-    margin-top: 2.5em;
+    margin-top: 2rem;
 
 }
 
 .SimpText {
 
-    color : rgb(129, 129, 129);
+    
+color : rgb(129, 129, 129);
+        font-size: 0.8em;
+        text-align: center;
+        margin-top: 1em;
+        margin-bottom: 40px;
+    @media (min-width: $desktop_width) {
+
+        color : rgb(129, 129, 129);
     font-size: 1.1em;
     text-align: center;
     margin-top: 1em;
+    margin-bottom: 40px;
+
+    }
 }
 
 .Button-container{
 
     display: flex;
+    justify-content: space-between;
+    width: 100%;
 
+}
+
+
+.btn{
+    border: none;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 15px 35px;
+
+    @media (min-width: $desktop_width) {
+
+        border: none;
+        border-radius: 25px;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 0px 20px 3px 20px;
+
+    }
+}
+
+.btn-primary{
+    background-color: $first_color;
+    color: #fff;
+}
+
+.button_bookmark {
+
+
+    background-color: hsl(0, 0%, 94%);
+    border: none;
+    border-radius: 25px 25px 25px 25px;
+    display: flex;
+    align-items: center;
+
+
+    @media (min-width: $desktop_width) {
+
+    background-color: hsl(0, 0%, 94%);
+    border: none;
+    border-radius: 25px 25px 25px 25px;
+    padding-right: 35px;
+    display: flex;
+    align-items: center;
+
+
+    }
+}
+
+.button_bookmarkContent {
+
+
+    display: none;
+
+    @media (min-width: $desktop_width) {
+
+
+        background-color: hsl(0, 0%, 94%);
+        color: hsl(0, 0%, 48%);
+        border-radius: 5px 25px 25px 5px;
+        font-size: 14px;
+        font-weight: 700;
+        padding-left: 15px;
+        display: block;
+        }
+}
+
+.icon_bookmark {
+
+    max-width: 45px;
 }
 
 }

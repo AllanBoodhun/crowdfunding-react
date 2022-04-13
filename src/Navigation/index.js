@@ -6,7 +6,7 @@ function Navigation () {
        
         <nav className='nav-bar'>
             <input type='checkbox' id='toggle-nav'/>
-            <label for='toggle-nav'>
+            <label htmlFor='toggle-nav'>
                 <span className='bar bar-one'></span>
                 <span className='bar bar-two'></span>
                 <span className='bar bar-three'></span>

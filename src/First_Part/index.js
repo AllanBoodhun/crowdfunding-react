@@ -1,5 +1,6 @@
 import './First_Part.scss';
 import logo from './logo-mastercraft.svg';
+import bookmark from './icon-bookmark.svg';
 
 function FirstPart () {
 
@@ -11,8 +12,11 @@ function FirstPart () {
             <p className='SimpText'>A beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
 
             <div className='Button-container'>
-                <button>Back this project</button>
-                <button>Bookmark</button>
+                <button className='btn btn-primary'>Back this project</button>
+                    <button className="button_bookmark">
+                        <img className="icon_bookmark" src={bookmark} alt="icon-bookmark"></img>
+                        <span className="button_bookmarkContent">Bookmark</span> 
+                    </button>
             </div>
         </div>
         
