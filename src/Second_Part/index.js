@@ -4,7 +4,7 @@ function SecondPart () {
 
     return (
        
-        <div className="Second-container">
+        <div className="card" id="Second-container">
             <div className='numbers-containers'>
                 <div className='number'>
                     <h2> $89,914 </h2>

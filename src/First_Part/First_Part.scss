@@ -1,22 +1,28 @@
 
 @import "../../public/style.scss";
 
-.First-container {
 
+.card{
     background-color: #fff;
+    max-width: $innerSmallWidth;
     width: 100%;
+    margin: 25px auto;
+    padding: 40px;
+    border-radius: 10px;
+    border: 1px solid rgb(228, 228, 228);
+}
+
+
+#First-container {
+
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
-    margin-top: 30%;
-    // height: 300px;
-    border-radius: 10px;
+    justify-content: center;
     position: relative;
-    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
 
-    @media (min-width: $desktop_width) {
+    // @media (min-width: $desktop_width) {
 
-    }
+    // }
 
 .logo-craft{
 
@@ -54,7 +60,7 @@
 .Button-container{
 
     display: flex;
-    
+
 }
 
 }
