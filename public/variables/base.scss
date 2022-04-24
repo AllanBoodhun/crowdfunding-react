@@ -2,5 +2,34 @@ $mobile_width: 480px;
 $desktop_width: 880px;
 $innerWidth: 1100px;
 $innerSmallWidth : 730px;
+$base-font-size: 16px;
 
 $first_color: hsl(176, 50%, 47%);
+
+@function strip-unit($number) {
+    @if type-of($number) == 'number' and not unitless ($number) {
+        @return $number / ($number * 0 + 1);
+    }
+    @return $number;
+}
+
+@function rem ($size, $base: $base-font-size) {
+    @return 1rem * $size / strip-unit($base);
+}
+
+@function em ($size, $base: $base-font-size) {
+    @return 1em * $size / strip-unit($base)
+}
+
+h2 {
+
+    color: #000;
+    font-size: em(18);
+}
+
+p {
+
+    font-size: em(14);
+    line-height: 24px;
+    margin-top: 20px;
+}
