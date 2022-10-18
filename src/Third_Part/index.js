@@ -17,7 +17,6 @@ function ThirdPart (props) {
                     <StandCard {...post} />
                 ))}
             </div>
-
         </div>
         
     )

@@ -12,11 +12,18 @@ function App() {
 
   const [dataJSON, setDataJSON] = useState(data);
 
+    const [value, setValue] = useState('');
+
+    function handleChange(newValue) {
+      setValue(newValue);
+      console.log(value);
+    }
+
   return (
     <div className="App innerWidth">
       <div className="nav-container">
         <Logo />
-        <Navigation />
+        <Navigation value={value} onChange={handleChange} />
       </div>
     <FirstPart />
     <SecondPart />

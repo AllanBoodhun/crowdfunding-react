@@ -1,11 +1,16 @@
 import './Navigation.scss';
+import { useState } from 'react';
 
-function Navigation () {
+function Navigation (props) {
+
+    function handleChange(event) {
+        props.onChange("Test résussi maggle");
+    }
 
     return (
        
         <nav className='nav-bar'>
-            <input type='checkbox' id='toggle-nav'/>
+            <input type='checkbox' id='toggle-nav' onClick={handleChange}/>
             <label htmlFor='toggle-nav'>
                 <span className='bar bar-one'></span>
                 <span className='bar bar-two'></span>

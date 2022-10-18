@@ -1,0 +1,66 @@
+@import "../../public/style.scss";
+
+#Third-container{
+    @media screen and ( max-width : $mobile_width) {
+        padding:  25px ;
+      }
+}
+.stand-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @media screen and ( max-width : $mobile_width) {
+    padding:  25px ;
+    row-gap: 10px;
+  }
+  &__title {
+    font-size: 1.1rem;
+    font-weight: 800;
+    flex: 50%;
+    @media screen and ( max-width : $mobile_width) {
+        flex: 100%;
+      }
+  }
+  &__pledge {
+    flex: 50%;
+    text-align: right;
+    color: $first_color;
+    @media screen and ( max-width : $mobile_width) {
+        flex: 100%;
+        text-align: left;
+      }
+  }
+  &__description{
+    margin: em(25) 0;
+    color: rgb(173, 173, 173);
+    line-height: 30px;
+  }
+  &__countdown{
+    flex: 50%;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    .days{
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .left{
+        color:$first_color;
+
+    }
+  }
+  &__button{
+    @media screen and ( max-width : $mobile_width) {
+        margin-top: 1rem;
+    }
+}
+  &.inactive{
+    opacity: 70%;
+    .stand-card__title , .stand-card__countdown .days{
+        color: #747474;
+    }
+    .stand-card__button{
+        pointer-events: none;
+    }
+  }
+}

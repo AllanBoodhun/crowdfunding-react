@@ -40,3 +40,30 @@ a{
   border-radius: 10px;
   border: 1px solid rgb(228, 228, 228);
 }
+
+.btn {
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 15px 35px;
+  cursor: pointer;
+
+  @media (min-width: $desktop_width) {
+
+      border: none;
+      border-radius: 25px;
+      font-size: 1rem;
+      font-weight: 700;
+      padding: 0px 20px 3px 20px;
+
+  }
+}
+
+.btn-primary {
+  background-color: $first_color;
+  color: #fff;
+  &:hover{
+    background-color: hsl(176, 47%, 42%);
+  }
+}

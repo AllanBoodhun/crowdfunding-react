@@ -66,28 +66,7 @@
     }
 
 
-    .btn {
-        border: none;
-        border-radius: 25px;
-        font-size: 1rem;
-        font-weight: 700;
-        padding: 15px 35px;
 
-        @media (min-width: $desktop_width) {
-
-            border: none;
-            border-radius: 25px;
-            font-size: 1rem;
-            font-weight: 700;
-            padding: 0px 20px 3px 20px;
-
-        }
-    }
-
-    .btn-primary {
-        background-color: $first_color;
-        color: #fff;
-    }
 
     .button_bookmark {
 
